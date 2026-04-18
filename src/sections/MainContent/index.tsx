@@ -142,7 +142,7 @@ export const MainContent = () => {
           >
             {/* Welcome to The Olive Branch! Discover a world of culinary delights and indulge in an unforgettable experience. */}
             <br />
-            <span className="font-bold text-[#c9a96e] text-base md:text-xl mt-4 block" style={{ textShadow: "2px 2px 6px rgba(0, 0, 0, 0.9)" }}>
+            <span className="font-bold text-white text-base md:text-xl mt-4 block" style={{ textShadow: "2px 2px 6px rgba(0, 0, 0, 0.9)" }}>
               Our full online order experience is coming soon, until then, our kitchen is still open.
             </span>
           </p>
@@ -152,14 +152,14 @@ export const MainContent = () => {
               href="https://order.toasttab.com/online/the-olive-branch-2269-ellsworth-rd"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[#60ee47] px-8 py-3 text-sm font-semibold text-white uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-[#4adb3d]"
+              className="inline-flex items-center justify-center rounded-full border-2 border-[#c9a96e] bg-[#4CAF50] px-8 py-3 text-sm font-semibold text-white uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-[#4CAF50]"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
               Order online
             </a>
             <a
               href="tel:+17349617452"
-              className="inline-flex items-center justify-center rounded-full border border-[#60ee47] px-8 py-3 text-sm font-semibold text-[#60ee47] uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-full border border-[#c9a96e] px-8 py-3 text-sm font-semibold text-white uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-white/10"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
               Call to order

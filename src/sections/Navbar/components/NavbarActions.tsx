@@ -11,9 +11,9 @@ export const NavbarActions = () => {
           className="inline-block"
         >
           <ShinyButton
-            className="!bg-[#60ee47] !text-black hover:!bg-[#4cd63a] !px-6 !py-2 !text-sm md:!text-base !leading-[25px]"
+            className="!bg-[#4CAF50] !text-black border-2 border-[#c9a96e] hover:!bg-[#4cd63a] !px-6 !py-2 !text-sm md:!text-base !leading-[25px]"
           >
-            Order
+            ORDER
           </ShinyButton>
         </a>
       </div>

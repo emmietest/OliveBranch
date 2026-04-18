@@ -43,7 +43,7 @@ export const ShinyButton: React.FC<ShinyButtonProps> = ({
         <div className="absolute inset-0 glow"></div>
         <div className="absolute inset-0 shine mix-blend-screen"></div>
       </div>
-      <div className="absolute inset-0.5 rounded-[18px] bg-zinc-900/75"></div>
+      <div className="absolute inset-0.5 rounded-[18px] "></div>
       <div className="relative text-zinc-300 group-hover:text-zinc-50 transition-colors duration-100">
         {children}
       </div>
