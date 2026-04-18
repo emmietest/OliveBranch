@@ -77,20 +77,20 @@ export const MainContent = () => {
       subtitle: "Welcome to The Olive Branch! Discover a world of culinary delights and indulge in an unforgettable experience. Our full online order experience is coming soon, until then, our kitchen is still open.",
       menuText: "OUR MENU",
     },
-    {
-      image: `${import.meta.env.BASE_URL}assets/hero22.jpg`,
-      address: "2269 Ellsworth Rd, Ypsilanti, MI 48197",
-      title: "THE OLIVE BRANCH RESTAURANT",
-      subtitle: "Experience authentic Italian cuisine crafted with passion and the finest ingredients. Join us for an unforgettable journey through the flavors of Italy.",
-      menuText: "OUR MENU",
-    },
-    {
-      image: `${import.meta.env.BASE_URL}assets/hero33.jpg`,
-      address: "2269 Ellsworth Rd, Ypsilanti, MI 48197",
-      title: "THE OLIVE BRANCH RESTAURANT",
-      subtitle: "From traditional recipes passed down through generations to innovative creations, every dish tells a story of Italian culinary heritage.",
-      menuText: "OUR MENU",
-    },
+    // {
+    //   image: `${import.meta.env.BASE_URL}assets/hero22.jpg`,
+    //   address: "2269 Ellsworth Rd, Ypsilanti, MI 48197",
+    //   title: "THE OLIVE BRANCH RESTAURANT",
+    //   subtitle: "Experience authentic Italian cuisine crafted with passion and the finest ingredients. Join us for an unforgettable journey through the flavors of Italy.",
+    //   menuText: "OUR MENU",
+    // },
+    // {
+    //   image: `${import.meta.env.BASE_URL}assets/hero33.jpg`,
+    //   address: "2269 Ellsworth Rd, Ypsilanti, MI 48197",
+    //   title: "THE OLIVE BRANCH RESTAURANT",
+    //   subtitle: "From traditional recipes passed down through generations to innovative creations, every dish tells a story of Italian culinary heritage.",
+    //   menuText: "OUR MENU",
+    // },
   ];
 
   useEffect(() => {
@@ -140,7 +140,7 @@ export const MainContent = () => {
             className="text-white text-sm md:text-lg mb-12 leading-relaxed max-w-2xl mx-auto"
             style={{ fontFamily: "'DM Sans', sans-serif", textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)" }}
           >
-            Welcome to The Olive Branch! Discover a world of culinary delights and indulge in an unforgettable experience.
+            {/* Welcome to The Olive Branch! Discover a world of culinary delights and indulge in an unforgettable experience. */}
             <br />
             <span className="font-bold text-[#c9a96e] text-base md:text-xl mt-4 block" style={{ textShadow: "2px 2px 6px rgba(0, 0, 0, 0.9)" }}>
               Our full online order experience is coming soon, until then, our kitchen is still open.
@@ -152,14 +152,14 @@ export const MainContent = () => {
               href="https://order.toasttab.com/online/the-olive-branch-2269-ellsworth-rd"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[#c9a96e] px-8 py-3 text-sm font-semibold text-black uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-[#b8935a]"
+              className="inline-flex items-center justify-center rounded-full bg-[#60ee47] px-8 py-3 text-sm font-semibold text-white uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-[#4adb3d]"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
               Order online
             </a>
             <a
               href="tel:+17349617452"
-              className="inline-flex items-center justify-center rounded-full border border-[#c9a96e] px-8 py-3 text-sm font-semibold text-[#c9a96e] uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-full border border-[#60ee47] px-8 py-3 text-sm font-semibold text-[#60ee47] uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-white/10"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
               Call to order
@@ -200,7 +200,7 @@ export const MainContent = () => {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`!px-6 !py-2 !text-xs !border !transition-all !duration-300 ${
                   activeCategory === cat.id
-                    ? "!bg-[#c9a96e] !border-[#c9a96e] !text-black"
+                    ? "!bg-[#60ee47] !border-[#c9a96e] !text-black"
                     : "!border-[#3a3a3a] !text-gray-400 hover:!border-[#c9a96e] hover:!text-[#c9a96e] !bg-transparent"
                 }`}
               >
@@ -276,7 +276,7 @@ export const MainContent = () => {
           </p>
           <ShinyButton
             onClick={() => document.getElementById('reservation')?.scrollIntoView({ behavior: 'smooth' })}
-            className="!bg-[#c9a96e] !text-black hover:!bg-[#b8935a] !px-10 !py-4 !text-sm"
+            className="!bg-[#60ee47] !text-black hover:!bg-[#4adb3d] !px-10 !py-4 !text-sm"
           >
             Book Your Seat
           </ShinyButton>
@@ -322,7 +322,7 @@ export const MainContent = () => {
             <div className="md:col-span-2 text-center">
               <ShinyButton
                 type="submit"
-                className="!bg-[#c9a96e] !text-black hover:!bg-[#b8935a] !px-14 !py-4 !text-sm"
+                className="!bg-[#60ee47] !text-black hover:!bg-[#4adb3d] !px-14 !py-4 !text-sm"
               >
                 Confirm Reservation
               </ShinyButton>
@@ -434,7 +434,7 @@ export const MainContent = () => {
               />
               <ShinyButton
                 type="submit"
-                className="!bg-[#c9a96e] !text-black hover:!bg-[#b8935a] !px-4 !py-2.5 !text-xs"
+                className="!bg-[#60ee47] !text-black hover:!bg-[#4adb3d] !px-4 !py-2.5 !text-xs"
               >
                 Join
               </ShinyButton>
