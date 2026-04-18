@@ -1,7 +1,7 @@
 export const NavbarLogo = () => {
   return (
     <div className="box-border caret-transparent float-left outline-[3px] px-2.5 md:px-5">
-      <a href="/" className="block">
+      <a href="https://emmietest.github.io/OliveBranch/" className="block">
         <img
           src="/OliveBranch/assets/OLIVE.png"
           alt="Cristiano Restaurant"
