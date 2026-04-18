@@ -71,21 +71,21 @@ export const MainContent = () => {
 
   const HERO_SLIDES = [
     {
-      image: "public/assets/hero1.jpeg",
+      image: `${import.meta.env.BASE_URL}assets/OliveBranch/assets/hero1.jpeg`,
       address: "2269 Ellsworth Rd, Ypsilanti, MI 48197",
       title: "THE OLIVE BRANCH RESTAURANT",
       subtitle: "Welcome to The Olive Branch! Discover a world of culinary delights and indulge in an unforgettable experience. Our full online order experience is coming soon, until then, our kitchen is still open.",
       menuText: "OUR MENU",
     },
     {
-      image: "public/assets/hero2.jpg",
+      image: `${import.meta.env.BASE_URL}assets/OliveBranch/assets/hero2.jpg`,
       address: "2269 Ellsworth Rd, Ypsilanti, MI 48197",
       title: "THE OLIVE BRANCH RESTAURANT",
       subtitle: "Experience authentic Italian cuisine crafted with passion and the finest ingredients. Join us for an unforgettable journey through the flavors of Italy.",
       menuText: "OUR MENU",
     },
     {
-      image: "public/assets/hero3.jpg",
+      image: `${import.meta.env.BASE_URL}assets/OliveBranch/assets/hero3.jpg`,
       address: "2269 Ellsworth Rd, Ypsilanti, MI 48197",
       title: "THE OLIVE BRANCH RESTAURANT",
       subtitle: "From traditional recipes passed down through generations to innovative creations, every dish tells a story of Italian culinary heritage.",
