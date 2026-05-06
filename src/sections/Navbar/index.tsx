@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { NavbarLogo } from "@/sections/Navbar/components/NavbarLogo";
 import { NavbarActions } from "@/sections/Navbar/components/NavbarActions";
 
 const NAV_LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#menu", label: "Menu" },
-  { href: "#about", label: "About" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#contact", label: "Contact" },
+  { to: "/#home", label: "Home" },
+  { to: "/menu", label: "Menu" },
+  { to: "/#about", label: "About" },
+  { to: "/#gallery", label: "Gallery" },
+  { to: "/#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
@@ -35,13 +36,13 @@ export const Navbar = () => {
 
         <nav className="hidden items-center gap-6 md:flex">
           {NAV_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
+            <Link
+              key={link.to}
+              to={link.to}
               className="text-sm text-white/80 transition hover:text-white"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -54,14 +55,14 @@ export const Navbar = () => {
       >
         <nav className="space-y-2 px-4">
           {NAV_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
+            <Link
+              key={link.to}
+              to={link.to}
               onClick={() => setMenuOpen(false)}
               className="block rounded-xl px-4 py-3 text-sm text-white/90 transition hover:bg-white/5 hover:text-white"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>

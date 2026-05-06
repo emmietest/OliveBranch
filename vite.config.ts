@@ -6,7 +6,7 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   publicDir: "./public",
-  base: "/OliveBranch/",
+  base: "/",
   css: {
     postcss: {
       plugins: [tailwind()],
