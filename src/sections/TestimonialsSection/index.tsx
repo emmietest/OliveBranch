@@ -80,10 +80,10 @@ export const TestimonialsSection = () => {
   const desktopOffset = currentIndex * CARD_WIDTH;
 
   return (
-    <div className="relative text-sm box-border caret-transparent flex flex-col leading-[21px] max-w-full outline-[3px] w-full mx-auto px-4 md:text-[15.8218px] md:leading-[23.7326px] md:px-[30px]">
-      <div className="text-sm box-border caret-transparent gap-x-0 flex flex-col grow flex-wrap h-full leading-[21px] max-w-[1170px] min-h-[auto] min-w-[auto] outline-[3px] gap-y-[45px] w-full mx-auto pb-[60px] md:text-[15.8218px] md:flex-nowrap md:leading-[23.7326px] md:pb-[90px]">
+    <div className="relative text-sm box-border caret-transparent flex flex-col leading-[21px] w-full outline-[3px] md:text-[15.8218px] md:leading-[23.7326px]">
+      <div className="text-sm box-border caret-transparent gap-x-0 flex flex-col grow flex-wrap h-full leading-[21px] w-full min-h-[auto] min-w-[auto] outline-[3px] gap-y-[45px] pb-[60px] md:text-[15.8218px] md:flex-nowrap md:leading-[23.7326px] md:pb-[90px]">
         {/* Title */}
-        <div className="relative text-sm box-border caret-transparent leading-[21px] max-w-full min-h-[auto] outline-[3px] md:text-[15.8218px] md:leading-[23.7326px]">
+        <div className="relative text-sm box-border caret-transparent leading-[21px] w-full min-h-[auto] outline-[3px] md:text-[15.8218px] md:leading-[23.7326px]">
           <div className="text-sm box-border caret-transparent grid leading-[21px] outline-[3px] text-center md:text-[15.8218px] md:leading-[23.7326px]">
             <h2 className="relative text-[24.4631px] font-normal box-border caret-transparent leading-[24.4631px] mt-[-8.56209px] min-h-[auto] min-w-[auto] outline-[3px] mx-auto py-2 font-cinzel md:text-[32.0832px] md:leading-[32.0832px] md:mt-[-11.2291px] after:accent-auto after:box-border after:caret-transparent after:text-zinc-900 after:block after:text-[24.4631px] after:not-italic after:normal-nums after:font-normal after:left-[-15%] after:tracking-[normal] after:leading-[24.4631px] after:list-outside after:list-disc after:[mask-image:linear-gradient(90deg,rgba(0,0,0,0),rgb(255,255,255)_40%,rgb(255,255,255)_60%,rgba(0,0,0,0))] after:outline-[3px] after:pointer-events-auto after:absolute after:right-[-15%] after:text-center after:no-underline after:indent-[0px] after:normal-case after:visible after:border-zinc-900 after:border-b after:border-separate after:border-t after:inset-y-0 after:font-cinzel after:md:text-[32.0832px] after:md:leading-[32.0832px]">
               Testimonials

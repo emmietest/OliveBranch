@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavbarLogo } from "@/sections/Navbar/components/NavbarLogo";
 import { NavbarActions } from "@/sections/Navbar/components/NavbarActions";
@@ -13,17 +13,26 @@ const NAV_LINKS = [
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-[100] bg-neutral-900 text-xs box-border caret-transparent outline-[3px]">
-      <div className="mx-auto flex h-[80px] max-w-[1400px] items-center justify-between gap-3 px-3 md:px-6">
+    <header className={`fixed top-0 z-[100] w-full transition-all duration-300 ${
+      scrolled ? "bg-neutral-950/90 backdrop-blur-sm shadow-lg" : "bg-transparent"
+    }`}>
+      <div className="mx-auto grid h-[80px] max-w-[1500px] grid-cols-[1fr_auto_1fr] items-center gap-4 px-3 text-white md:px-6">
         <div className="flex items-center gap-3">
           <button
             type="button"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-expanded={menuOpen}
             aria-controls="mobile-navbar"
-            className="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10"
+            className="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition hover:bg-white/15"
           >
             <span className="sr-only">Toggle navigation menu</span>
             <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -31,22 +40,26 @@ export const Navbar = () => {
             </svg>
           </button>
 
+          <nav className="hidden items-center gap-6 md:flex">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-sm text-white/80 transition hover:text-white"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <div className="flex justify-center">
           <NavbarLogo />
         </div>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className="text-sm text-white/80 transition hover:text-white"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
-        <NavbarActions />
+        <div className="flex justify-end">
+          <NavbarActions />
+        </div>
       </div>
 
       <div

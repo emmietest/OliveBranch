@@ -20,7 +20,7 @@ export const MenuPage = () => {
         />
       </section>
 
-      <div className="mx-auto max-w-[1170px] px-4 md:px-[30px] pb-20">
+      <div className="w-full px-4 md:px-[30px] pb-20">
         <CategoryTabs />
         <SpecialsSection />
         <MenuCategorySection />
