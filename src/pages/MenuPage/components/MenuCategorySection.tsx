@@ -8,7 +8,7 @@ export const MenuCategorySection = () => {
         <div className="mb-[88px]">
           <CategoryHero
             title="Salads"
-            imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/heading-salads.jpg"
+            imageUrl="/assets/menu1.png"
             imageAlt="Salads"
           />
         </div>
@@ -45,7 +45,7 @@ export const MenuCategorySection = () => {
         <div className="mb-[88px]">
           <CategoryHero
             title="Pizza"
-            imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/heading-pizza.jpg"
+            imageUrl="/assets/menu2.png"
             imageAlt="Pizza"
           />
         </div>
@@ -64,7 +64,7 @@ export const MenuCategorySection = () => {
         <div className="mb-[88px]">
           <CategoryHero
             title="Burgers"
-            imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/heading-burger.jpg"
+            imageUrl="/assets/menu3.png"
             imageAlt="Burgers"
           />
         </div>
@@ -81,7 +81,7 @@ export const MenuCategorySection = () => {
         <div className="mb-[88px]">
           <CategoryHero
             title="Sushi"
-            imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/heading-sushi.jpg"
+            imageUrl="/assets/menu4.png"
             imageAlt="Sushi"
           />
         </div>

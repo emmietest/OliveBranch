@@ -9,7 +9,7 @@ export const MenuCategorySection = () => {
         <div className="mb-[88px]">
           <CategoryHero
             title="Salads"
-            imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/heading-salads.jpg"
+            <img src={`${import.meta.env.BASE_URL}assets/heading-salad.jpg`} alt="Salads" className="w-full h-auto object-cover rounded-[63%_37%_30%_70%_/_50%_45%_55%_50%] shadow-[rgba(0,0,0,0.25)_0px_1px_3px_0px]" />
             imageAlt="Salads"
           />
         </div>
