@@ -4,58 +4,155 @@ import { MenuItemCard } from "@/pages/MenuPage/components/MenuItemCard";
 export const MenuCategorySection = () => {
   return (
     <div>
+      <div id="appetizers" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Appetizers"
+            imageUrl="/assets/menu1.png"
+            imageAlt="Appetizers"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Fattah Hummus"
+            description="Creamy hummus mixed with pita and yogurt."
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Meat Arayes"
+            description="Grilled bread stuffed with spiced meat and toasted to perfection."
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Cheese Arayes & Thyme"
+            description="Grilled bread stuffed with melted cheese & fragrant thyme."
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Falafel (8 PC)"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Fried Kibbeh (4 PC)"
+            description=""
+            price="9.99"
+          />
+          <MenuItemCard
+            title="Fried Cheese Rolls (4 PC)"
+            description=""
+            price="7.99"
+          />
+          <MenuItemCard
+            title="Grape Leaves (8 PC)"
+            description=""
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Lentil Soup"
+            description=""
+            price="4.99"
+          />
+          <MenuItemCard
+            title="Seasoned Fries"
+            description=""
+            price="4.99"
+          /><MenuItemCard
+            title="Fried Califlower"
+            description=""
+            price="6.99"
+          /><MenuItemCard
+            title="Fried Eggplant"
+            description=""
+            price="6.99"
+          /><MenuItemCard
+            title="Mixed Olives"
+            description=""
+            price="4.99"
+          />
+          <MenuItemCard
+            title="Hummus"
+            description="Add meat or chicken nuts +$3.99"
+            price="6.49"
+          />
+          <MenuItemCard
+            title="Baba Ganoush"
+            description=""
+            price="6.49"
+          />
+          <MenuItemCard
+            title="Foul (Fava Beans)"
+            description=""
+            price="6.49"
+          />
+          <MenuItemCard
+            title="Patata Harra"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Qalayat Bandora"
+            description="Add Meat +$3.99"
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Musakhan Rolls"
+            description=""
+            price="9.99"
+          />
+          <MenuItemCard
+            title="Chicken Tenders (4PC)"
+            description=""
+            price="7.99"
+          />
+          <MenuItemCard
+            title="Chicken Nuggets"
+            description=""
+            price="7.99"
+          /><MenuItemCard
+            title="Chicken Quesadilla"
+            description=""
+            price="7.99"
+          /><MenuItemCard
+            title="Cheese Quesadilla"
+            description=""
+            price="6.99"
+          /><MenuItemCard
+            title="Mujadara"
+            description="Brown lentils, bulger shells and fried onions."
+            price="4.99"
+          />
+        </ul>
+      </div>
+
       <div id="salads" className="my-24">
         <div className="mb-[88px]">
           <CategoryHero
             title="Salads"
-            imageUrl="/assets/menu1.png"
+            imageUrl="/assets/menu2.png"
             imageAlt="Salads"
           />
         </div>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
           <MenuItemCard
             title="Fattoush"
-            description="A classic American salad, our Waldorf Salad features crisp apples, grapes, celery, and walnuts mixed with fresh lettuce and dressed in a light yogurt-based dressing."
-            price="10.49"
+            description=""
+            price="7.99"
           />
           <MenuItemCard
-            title="Tuna Salad"
-            description="Delight in our fresh Tuna Salad, featuring chunks of premium tuna mixed with crisp romaine lettuce, cherry tomatoes, cucumber, red onion, and Kalamata olives. Tossed in a light lemon vinaigrette and garnished with a sprinkle of capers for an extra burst of flavor."
-            price="13.99"
-          />
-          <MenuItemCard
-            title="Sea Salad"
-            description="A healthy and satisfying option, our Quinoa Avocado Salad includes a blend of quinoa, diced avocado, cherry tomatoes, cucumber, red onion, and mixed greens, all tossed in a light lemon vinaigrette."
-            price="10.99"
-          />
-          <MenuItemCard
-            title="Grilled Caesar Salad"
-            description="Enjoy a twist on a classic with our Grilled Caesar Salad. Crisp romaine hearts lightly charred on the grill, topped with shaved Parmesan, crunchy croutons, and drizzled with our house-made Caesar dressing. Add grilled chicken for an extra boost of flavor."
-            price="11.99"
+            title="Tabbouleh"
+            description=""
+            price="7.99"
           />
           <MenuItemCard
             title="Greek Salad"
-            description="Enjoy the fresh flavors of our Greek Salad, made with ripe tomatoes, cucumbers, red onions, Kalamata olives, and feta cheese, all tossed in a tangy lemon-oregano dressing."
-            price="9.99"
+            description=""
+            price="8.99"
           />
-        </ul>
-      </div>
-
-      <div id="pizza" className="my-24">
-        <div className="mb-[88px]">
-          <CategoryHero
-            title="Pizza"
-            imageUrl="/assets/menu2.png"
-            imageAlt="Pizza"
-          />
-        </div>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
           <MenuItemCard
-            title="Four Cheese Pizza"
-            description="Delight in our Four Cheese Pizza, featuring a rich blend of mozzarella, cheddar, gorgonzola, and Parmesan cheeses on a creamy garlic sauce base. Perfect for cheese enthusiasts."
-            price="19.99"
-            // imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/product-pizza-4-150x150.jpg"
-            imageAlt="Four Cheese Pizza"
+            title="Tahini Salad"
+            description="Add Grilled chicken, Shawarma chicken or Zinger (Tender Chicken) +$3.99"
+            price="6.99"
           />
         </ul>
       </div>
@@ -70,75 +167,489 @@ export const MenuCategorySection = () => {
         </div>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
           <MenuItemCard
-            title="Mushroom Swiss Burger"
-            description="Enjoy the savory flavors of our Mushroom Swiss Burger. A juicy beef patty topped with sautéed mushrooms, melted Swiss cheese, caramelized onions, and garlic aioli, all served on a toasted brioche bun."
+            title="New Orleans Burger"
+            description="Fresh burger meat with barbecue sauce on fresh dough, served with seasoned fries."
             price="11.99"
           />
         </ul>
       </div>
 
-      <div id="sushi" className="my-24">
+      <div id="loaded-fries" className="my-24">
         <div className="mb-[88px]">
           <CategoryHero
-            title="Sushi"
+            title="Loaded Fries"
             imageUrl="/assets/menu4.png"
-            imageAlt="Sushi"
+            imageAlt="Loaded Fries"
           />
         </div>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
           <MenuItemCard
-            title="California Roll"
-            description="Enjoy the fresh flavors of our California Roll, made with crab meat, avocado, and cucumber, wrapped in seaweed and rice, and garnished with tobiko (fish roe)."
+            title="Cheese Loaded Fries"
+            description=""
             price="7.99"
-            // imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/product-sushi-4-150x150.jpg"
-            imageAlt="California Roll"
+          />
+          <MenuItemCard
+            title="Chicken Loaded Fries"
+            description="(meat, chicken, Ketchup, mayo, special sauce, white sauce, parmesan cheese & cheddar cheese)"
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Meat Loaded Fries"
+            description="(meat, chicken, Ketchup, mayo, special sauce, white sauce, parmesan cheese & cheddar cheese)"
+            price="10.99"
           />
         </ul>
       </div>
 
-      <div id="dinner" className="my-24">
+      <div id="bowls" className="my-24">
         <div className="mb-[88px]">
           <CategoryHero
-            title="Dinner"
-            imageUrl="https://c.animaapp.com/motm2httyyOuCg/assets/heading-dinner.jpg"
-            imageAlt="Dinner"
+            title="Bowls"
+            imageUrl="/assets/menu5.png"
+            imageAlt="Bowls"
           />
         </div>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
           <MenuItemCard
-            title="Vegetarian Stir-Fry"
-            description="A healthy and flavorful option, our Vegetarian Stir-Fry includes a mix of fresh vegetables such as bell peppers, broccoli, snap peas, and carrots, stir-fried in a savory soy-ginger sauce and served over jasmine rice."
-            price="12.49"
+            title="Falafel Bowl"
+            description="Served with your choice of rice or mujadara, tomatoes, pickles, onions, garlic sauce, special sauce, & tahini sauce."
+            price="12.99"
           />
           <MenuItemCard
-            title="Beef Stroganoff"
-            description="Enjoy the comfort of our Beef Stroganoff, featuring tender strips of beef cooked in a creamy mushroom sauce, served over egg noodles and garnished with fresh parsley."
-            price="9.99"
+            title="Chicken Shawarma Bowl"
+            description="Served with your choice of rice or mujadara, tomatoes, pickles, onions, garlic sauce, special sauce, & tahini sauce."
+            price="12.99"
           />
           <MenuItemCard
-            title="Spicy Salmon Spaghetti"
-            description="Experience a flavorful kick with our Spicy Salmon Spaghetti. Al dente spaghetti tossed in a zesty tomato-based sauce with chili flakes, garlic, and herbs, topped with tender pieces of grilled salmon. A perfect blend of spice and savory seafood."
-            price="21.99"
+            title="Meat Shawarma Bowl"
+            description="Served with your choice of rice or mujadara, tomatoes, pickles, onions, garlic sauce, special sauce, & tahini sauce."
+            price="12.99"
           />
           <MenuItemCard
-            title="Lemon Herb Grilled Salmon"
-            description="Enjoy our tender grilled salmon, marinated in a zesty lemon herb sauce and served with wild rice and a side of sautéed spinach."
-            price="24.99"
+            title="Mixed Shawarma Bowl"
+            description="Served with your choice of rice or mujadara, tomatoes, pickles, onions, garlic sauce, special sauce, & tahini sauce."
+            price="12.99"
+          />
+        </ul>
+      </div>
+
+      <div id="plates" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Plates"
+            imageUrl="/assets/menu6.png"
+            imageAlt="Plates"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Chicken Shawarma Plate"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="15.99"
           />
           <MenuItemCard
-            title="Foie Gras with Vegetable Salad"
-            description="Savor our pan-seared Foie Gras served with a fresh vegetable salad, featuring baby greens, cherry tomatoes, and a light balsamic vinaigrette."
+            title="Meat Shawarma Plate"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
             price="16.99"
           />
           <MenuItemCard
-            title="Creamy Meatball Soup"
-            description="Warm up with our Creamy Meatball Soup, featuring tender meatballs, cauliflower florets, baby peas, and carrots, all simmered in a rich, creamy broth. A hearty and comforting choice for any meal."
-            price="18.99"
+            title="Mixed Shawarma Plate"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="17.49"
           />
           <MenuItemCard
-            title="Baked Chicken With Asparagus Herbs"
-            description="Enjoy our juicy Baked Chicken, garnished with fresh asparagus and fragrant herbs. A delightful, healthy option that’s full of flavor."
-            price="18.99"
+            title="Kufta Plate (3 Skewers)"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="16.99"
+          />
+          <MenuItemCard
+            title="Falafel Plate"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="14.99"
+          />
+          <MenuItemCard
+            title="Shish Kabob (3)"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="16.99"
+          />
+          <MenuItemCard
+            title="Shish Tawook Plate (3)"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="17.99"
+          />
+          <MenuItemCard
+            title="Kufta Tahini Plate (3)"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="18.49"
+          />
+          <MenuItemCard
+            title="Kufta Banadora"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="18.49"
+          />
+          <MenuItemCard
+            title="Crispy Chicken Plate"
+            description="Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="15.99"
+          />
+          <MenuItemCard
+            title="Mixed Grill Plate"
+            description="(Meat kabab, kofta, shish tawook, rice) Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="20.99"
+          />
+          <MenuItemCard
+            title="Grilled Chicken Plate"
+            description="(Also served with vegetables) Served with salad & your choice of rice or mujadara, garlic sauce, tahini, & special sauce."
+            price="14.99"
+          />
+          <MenuItemCard
+            title="Family Platter (Serves 6-8)"
+            description="4 beef kabob, 4 kufta, 4 shish tawook, 1lb chicken, 1lb meat shawarma, grilled onions, grilled tomatoes, hummus & fries"
+            price="149.99"
+          />
+          <MenuItemCard
+            title="Extra Side of Sauce"
+            description="(Garlic, Special, Shawarma, etc.)"
+            price="1.20"
+          />
+        </ul>
+      </div>
+
+      <div id="sandwiches" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Sandwiches"
+            imageUrl="/assets/menu7.png"
+            imageAlt="Sandwiches"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Chicken Zinger (Tender Chicken)"
+            description="(garlic, special sauce, tomatoes & lettuce)"
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Spicy Chicken Shawarma"
+            description="(Spicy sauce, cheese, pomegranate sauce, & garlic)"
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Chicken Shawarma"
+            description=""
+            price="9.99"
+          />
+          <MenuItemCard
+            title="Meat Shawarma"
+            description=""
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Meat Shawarma Spicy"
+            description=""
+            price="11.99"
+          />
+          <MenuItemCard
+            title="Mixed Shawarma"
+            description=""
+            price="11.49"
+          />
+          <MenuItemCard
+            title="Kofta Sandwich"
+            description=""
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Shish Kabob Sandwich"
+            description="Make it a combo fries + drink (Cola, Sprite) +$3.99"
+            price="11.99"
+          />
+        </ul>
+      </div>
+
+      <div id="veggie-sandwiches" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Veggie Sandwiches"
+            imageUrl="/assets/menu8.png"
+            imageAlt="Veggie Sandwiches"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Falafel Sandwich"
+            description=""
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Grape Leaves Sandwich"
+            description=""
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Fries Sandwich"
+            description="Add Tabouli +$2.99"
+            price="7.99"
+          />
+        </ul>
+      </div>
+
+      <div id="deluxe-shawarma" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Deluxe Shawarma"
+            imageUrl="/assets/menu9.png"
+            imageAlt="Deluxe Shawarma"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Chicken Deluxe Shawarma"
+            description="(fully stuffed with cabbage, lettuce, hummus, garlic sauce, pickles & pomegranate molasses)"
+            price="11.99"
+          />
+          <MenuItemCard
+            title="Meat Deluxe Shawarma"
+            description="(fully stuffed with cabbage, lettuce, hummus, garlic sauce, pickles & pomegranate molasses)"
+            price="12.99"
+          />
+          <MenuItemCard
+            title="Mixed Deluxe Shawarma"
+            description="(fully stuffed with cabbage, lettuce, hummus, garlic sauce, pickles & pomegranate molasses)"
+            price="13.49"
+          />
+          <MenuItemCard
+            title="Falafel Deluxe"
+            description="(fully stuffed with cabbage, lettuce, hummus, garlic sauce, pickles & pomegranate molasses)"
+            price="10.99"
+          />
+        </ul>
+      </div>
+
+      <div id="breakfast" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Breakfast (Served Daily)"
+            imageUrl="/assets/menu10.png"
+            imageAlt="Breakfast"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Falafel"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Eggs"
+            description=""
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Chicken Liver"
+            description=""
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Cheese Arayes"
+            description=""
+            price="7.99"
+          />
+          <MenuItemCard
+            title="Meat Arayes"
+            description=""
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Spicy Potatoes"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Fried Cauliflower"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Fried Eggplant"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Halloumi Cheese"
+            description=""
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Labneh"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Labneh Jerashiya"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Pancakes"
+            description=""
+            price="4.99"
+          />
+          <MenuItemCard
+            title="Mangosh Cheese & Turkey"
+            description=""
+            price="7.99"
+          />
+          <MenuItemCard
+            title="Mangosh Cheese"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Mangosh Zaatar"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Eggs with Hashbrowns"
+            description="All eggs cooked on fresh dough."
+            price="9.99"
+          />
+          <MenuItemCard
+            title="Shakshuka - SM"
+            description="Poached eggs in a rich spicy tomato sauce, served with bread. Add Cheese +$1.49"
+            price="8.99"
+          />
+          <MenuItemCard
+            title="Shakshuka - LG"
+            description="Poached eggs in a rich spicy tomato sauce, served with bread. Add Cheese +$1.49"
+            price="14.99"
+          />
+        </ul>
+      </div>
+
+      <div id="weekend-breakfast" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Weekend Breakfast (Sat & Sun Only)"
+            imageUrl="/assets/menu11.png"
+            imageAlt="Weekend Breakfast"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Breakfast for 2"
+            description="A shared Middle Eastern breakfast plate includes: falafel, cheese arayes, eggs, hummus, labneh, labneh mudhabbara Jerashiya, chicken liver, olives, olive oil & zaatar, pita bread, pickles, vegetables, tea or coffee."
+            price="25.99"
+          />
+          <MenuItemCard
+            title="Breakfast for 4"
+            description="A large family-style breakfast plate includes: falafel, cheese arayes, eggs, hummus, labneh, labneh mudhabbara Jerashiya, chicken liver, olives, olive oil & zaatar, pita bread, pickles, vegetables, tea or coffee."
+            price="45.99"
+          />
+        </ul>
+      </div>
+
+      <div id="beverages" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Fresh Juices & Smoothies / Beverages"
+            imageUrl="/assets/menu12.png"
+            imageAlt="Beverages"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Orange Juice"
+            description=""
+            price="5.99"
+          />
+          <MenuItemCard
+            title="Lemon & Mint"
+            description=""
+            price="5.99"
+          />
+          <MenuItemCard
+            title="Mango Smoothie"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Strawberry Banana Smoothie"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Berry Smoothie"
+            description=""
+            price="6.99"
+          />
+          <MenuItemCard
+            title="Olive Branch Cocktail"
+            description="Keshta arabic, almond, pistachio, fresh strawberry, fresh banana, & milk."
+            price="10.99"
+          />
+          <MenuItemCard
+            title="Lemonades (various)"
+            description=""
+            price="4.99"
+          />
+          <MenuItemCard
+            title="American Coffee"
+            description=""
+            price="3.49"
+          />
+          <MenuItemCard
+            title="Energy Drink"
+            description=""
+            price="4.49"
+          />
+          <MenuItemCard
+            title="Palestinian Drink"
+            description=""
+            price="3.99"
+          />
+          <MenuItemCard
+            title="Coke/Sprite"
+            description=""
+            price="2.99"
+          />
+          <MenuItemCard
+            title="Cup of Tea"
+            description=""
+            price="2.99"
+          /><MenuItemCard
+            title="Tea pot for 3"
+            description=""
+            price="5.99"
+          />
+          <MenuItemCard
+            title="Tea pot for 6"
+            description=""
+            price="9.99"
+          />
+        </ul>
+      </div>
+
+
+      <div id="desserts" className="my-24">
+        <div className="mb-[88px]">
+          <CategoryHero
+            title="Desserts"
+            imageUrl="/assets/menu12.png"
+            imageAlt="Desserts"
+          />
+        </div>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-14 list-none pl-0 max-w-[1232px] mx-auto">
+          <MenuItemCard
+            title="Baklava"
+            description=""
+            price="5.99"
+          />
+          <MenuItemCard
+            title="Kunafa"
+            description=""
+            price="8.99"
           />
         </ul>
       </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavbarLogo } from "@/sections/Navbar/components/NavbarLogo";
 import { NavbarActions } from "@/sections/Navbar/components/NavbarActions";
@@ -13,19 +13,10 @@ const NAV_LINKS = [
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
-    <header className={`fixed top-0 z-[100] w-full transition-all duration-300 ${
-      scrolled ? "bg-neutral-950/90 backdrop-blur-sm shadow-lg" : "bg-transparent"
-    }`}>
-      <div className="border-b border-white/10 bg-neutral-950/90 bg-opacity-80 backdrop-blur-sm">
+    <header className="fixed top-0 z-[100] w-full transition-all duration-300 bg-transparent">
+      <div className="border-b border-white/10 bg-transparent backdrop-blur-sm">
         <div className="mx-auto flex h-[80px] max-w-[1500px] items-center justify-between gap-4 px-3 text-white/80 md:px-6">
           <div className="hidden md:flex flex-col text-sm leading-5">
             <span className="font-semibold text-white">2269 Ellsworth Rd, Ypsilanti, MI 48197</span>
